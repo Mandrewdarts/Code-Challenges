@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import {FibComponent} from './components/FibComponent'
+import { FizzBuzzComponent } from './components/FizzBuzzComponent';
+import { FizzBuzzFibComponent } from './components/FizzBuzzFibComponent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <FibComponent/>
+      </div>
+
+      <div style={{ marginTop: 150 }}>
+        <FizzBuzzComponent/>
+      </div>
+
+      <div style={{ marginTop: 150, marginBottom: 100 }}>
+        <FizzBuzzFibComponent/>
+      </div>
     </div>
   );
 }
